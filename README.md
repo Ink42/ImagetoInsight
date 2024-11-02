@@ -1,27 +1,41 @@
 # ImagetoInsight
 
-The software, ImagetoInsight , is designed to make text extraction and summarization effortless. By simply taking a photo of a document, article, or any text-heavy image, users can instantly receive a concise, easy-to-read summary. Leveraging advanced OCR (Optical Character Recognition) and natural language processing, ImagetoInsight accurately extracts text from images, identifies key points, and delivers summaries that are ideal for quick understanding. It's the perfect tool for students, professionals, or anyone looking to save time on reading long documents.
+*ImagetoInsight* is designed to make text extraction and summarization effortless. By simply taking a photo of a document, article, or any text-heavy image, users can instantly receive a concise, easy-to-read summary. Leveraging advanced OCR (Optical Character Recognition) and natural language processing, ImagetoInsight accurately extracts text from images, identifies key points, and delivers summaries that are ideal for quick understanding. It's perfect for students, professionals, or anyone looking to save time on reading long documents.
 
+---
 
+## Setup Guide
 
-To set up *ImagetoInsight*, follow these prerequisites and install the necessary components:
+### 1. Prerequisites
 
-### Prerequisites:
-Run the following commands in your terminal to update your system and install Tesseract OCR:
+**For Linux:**  
+To enable OCR capabilities, install Tesseract OCR:
 
-- for linix
-
-```
+```bash
 sudo apt update
 sudo apt install tesseract-ocr
 ```
 
+### 2. Python Environment Setup
 
-### Additional Python Libraries:
-You’ll also need the following Python packages for text extraction and summarization:
+1. **Create a Virtual Environment (recommended)**  
+   ```bash
+   python3 -m venv env
+   source env/bin/activate
+   ```
 
-```
-pip install pytesseract pillow
-```
+2. **Install Python Libraries**  
+   You’ll need `pytesseract` and `pillow` for image processing, and other dependencies for summarization.
 
-With these installed, *ImagetoInsight* will be ready to extract text and summarize documents from images!
+   ```bash
+   pip install pytesseract pillow
+   ```
+
+3. **Install Additional Requirements**  
+   If you have a `requirements.txt` file, you can install all necessary libraries at once:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+With these installed, *ImagetoInsight* will be fully set up and ready to extract text and summarize documents from images, *It really sucks when it comes to understanding doctors handwriting*🫣
